@@ -87,3 +87,12 @@ function displayMessage(message) {
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+  const cells = document.querySelectorAll(".cell");
+
+  cells.forEach(function (cell) {
+    cell.addEventListener("click", function () {
+      cell.classList.add("yellow");
+    });
+  });
+});
